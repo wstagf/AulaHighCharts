@@ -55,7 +55,7 @@ console.log('a')
   });
 
 
-  column = new Chart({
+  line = new Chart({
     title: {
       text: 'Evolução no período'
     },
@@ -72,7 +72,7 @@ console.log('a')
     },
     series: [
       {
-        type: 'column',
+        type: 'line',
         color: this.status[0].cor,
         name: this.status[0].label, 
         data: [ 
@@ -100,7 +100,7 @@ console.log('a')
        ]
       },
       {
-        type: 'column',
+        type: 'line',
         color: this.status[1].cor,
         name: this.status[1].label, 
         data: [ 
@@ -127,7 +127,7 @@ console.log('a')
        ]
       },
       {
-        type: 'column',
+        type: 'line',
         color: this.status[2].cor,
         name: this.status[2].label, 
         data: [ 
