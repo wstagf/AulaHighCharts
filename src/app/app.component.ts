@@ -12,12 +12,9 @@ console.log('a')
   }
 
   status = [
-    {cor: '#008a49', label: 'Novos'},
-    {cor: '#038fab', label: 'Faturados'},
-    {cor: '#ff7333', label: 'Separados'},
-    {cor: '#db008c', label: 'Enviados'},
-    {cor: '#b9bf00', label: 'Entregues'},
-  
+    {cor: '#003f5c', label: 'Pendentes'},
+    {cor: '#bc5090', label: 'Finalizados'},
+    {cor: '#ffa600', label: 'Cancelados'},
   ]
   pie = new Chart({
     title: {
@@ -51,16 +48,6 @@ console.log('a')
             color: this.status[2].cor,
             name: this.status[2].label,          
             y: 12
-          },
-          {
-            color: this.status[3].cor,
-            name: this.status[3].label,     
-            y: 32
-          },
-          {
-            color: this.status[4].cor,
-            name: this.status[4].label,     
-            y: 11
           },
        ]
       }
